@@ -1,0 +1,37 @@
+For Virtual-env:
+    mkdir .venv
+    virtualenv -p python3 .venv
+
+    source <curret_dir>/.venv/bin/activate
+
+For Flask:
+    pip3 install Flask
+    
+    (pip3 freeze)
+
+Runing Server:
+    python3 server.py
+    or
+    flask --app server.py run
+
+Telnet:
+    telnet 127.0.0.1 5000
+        GET /<path> HTTP/1.0
+
+
+For Curl:
+
+    curl -X POST http://127.0.0.1:5000/signup      -H "Content-Type: application/json"      -d '{"email": "a@a", "password": "1234", "firstname":"jagharcancer", "familyname":"fanaids", "gender":"aids", "city":"suck","country":"hell"}'
+
+    curl -X POST http://127.0.0.1:5000/signin      -H "Content-Type: application/json"      -d '{"email": "a@a", "password": "1234"}'
+
+    curl -X POST http://127.0.0.1:5000/changepassword      -H "Content-Type: application/json"      -d '{"token": "d71fabb5d81707e55e6c1c5daf3d3b59954bcc3199eafcbc75cecd99e43d5a46", "oldpassword": "1234", "newpassword": "lala"}'
+
+
+    frågor:
+
+    Vad är en socket lol
+
+    ok med async o promise? bättre än callback()?
+
+    varför en virtualenv? gjorde allt utom gunicorn i local
