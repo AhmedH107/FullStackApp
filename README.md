@@ -29,7 +29,7 @@ The app allows users to sign up, sign in, view user data, post messages to user 
 
 ## Project Structure
 
-
+```text
 App/
 ├── static/
 │   ├── client.html
@@ -42,7 +42,7 @@ App/
 ├── requirements.txt
 ├── schema.sql
 └── server.py
-```text
+
 
 
 
